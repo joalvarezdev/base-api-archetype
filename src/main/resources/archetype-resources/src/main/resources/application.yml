@@ -11,15 +11,15 @@ spring:
   liquibase:
     change-log: classpath:database/liquibase-changelog.yml
     url: jdbc:postgresql://localhost:5432/${databaseName}
-    user: postgres
-    password: postgres
+    user: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     enabled: false
 
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/${databaseName}
-    username: postgres
-    password: postgres
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
   jpa:
     hibernate:

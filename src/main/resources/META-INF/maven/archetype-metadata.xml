@@ -33,6 +33,7 @@
                 <include>**/*.txt</include>
                 <include>**/*.yml</include>
                 <include>**/*.sql</include>
+                <include>**/*.xml</include>
             </includes>
         </fileSet>
         <fileSet filtered="true" encoding="UTF-8">
@@ -52,12 +53,16 @@
             <directory/>
             <includes>
                 <include>.editorconfig</include>
-                <include>.env</include>
                 <include>docker-compose.yml</include>
+                <include>dot.gitignore</include>
                 <include>mvnw</include>
                 <include>mvnw.cmd</include>
-                <include>.gitignore</include>
             </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory/>
+            <include>.env</include>
+            <include>README.md</include>
         </fileSet>
     </fileSets>
 </archetype-descriptor>
