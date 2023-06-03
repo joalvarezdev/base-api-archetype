@@ -38,3 +38,7 @@ app:
   name: '@project.name@'
   description: '@project.description@'
   version: '@project.version@'
+
+api.security.endpoints:
+  - path: /**
+    authorities: [ADMIN]
